@@ -20,7 +20,7 @@ export BUILD_SITE_PATH_PREFIX="oss"
 export BUILD_TEST_FAILURE_IGNORE="false"
 export BUILD_TEST_SKIP="false"
 
-export GRADLE_INIT_SCRIPT="${GIT_SERVICE}/${GIT_REPO_OWNER}/oss-build/raw/${BUILD_SCRIPT_REF}/src/main/gradle/init-oss-lib.gradle"
+
 
 ### OSS CI CALL REMOTE CI SCRIPT BEGIN
 echo "eval \$(curl -s -L ${GIT_SERVICE}/${GIT_REPO_OWNER}/oss-build/raw/${BUILD_SCRIPT_REF}/src/main/ci-script/ci.sh)"
@@ -31,16 +31,4 @@ if [ "${GIT_REPO_OWNER}" != "home1-oss" ] && [ "${1}" != "test_and_build" ]; the
     echo "skip deploy/publish on forked repo"
 else
     $@
-fi
-
-# after build default version, build other versions
-if [ "${GIT_REPO_OWNER}" != "home1-oss" ] && [ "${1}" != "test_and_build" ]; then
-    echo "skip deploy/publish on forked repo"
-else
-    VERSIONS=( "1.4.1.RELEASE" "1.4.2.RELEASE" )
-    export ORIGINAL_GRADLE_PROPERTIES="${GRADLE_PROPERTIES}"
-    for version in "${VERSIONS[@]}"; do
-        export GRADLE_PROPERTIES="${ORIGINAL_GRADLE_PROPERTIES} -PspringBootVersion=${version}"
-        gradle_$@
-    done
 fi
