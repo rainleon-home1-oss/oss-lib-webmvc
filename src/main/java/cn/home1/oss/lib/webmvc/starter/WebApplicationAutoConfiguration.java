@@ -2,6 +2,13 @@ package cn.home1.oss.lib.webmvc.starter;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
+import cn.home1.oss.boot.autoconfigure.AppProperties;
+import cn.home1.oss.lib.webmvc.api.DomainResolver;
+import cn.home1.oss.lib.webmvc.api.RequestResolver;
+import cn.home1.oss.lib.webmvc.internal.DefaultDomainResolver;
+import cn.home1.oss.lib.webmvc.internal.DefaultHttpEntityMethodProcessor;
+import cn.home1.oss.lib.webmvc.internal.DefaultRequestResolver;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -20,13 +27,6 @@ import org.springframework.web.servlet.DispatcherServlet;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
 
 import javax.servlet.Servlet;
-
-import cn.home1.oss.boot.autoconfigure.AppProperties;
-import cn.home1.oss.lib.webmvc.api.DomainResolver;
-import cn.home1.oss.lib.webmvc.api.RequestResolver;
-import cn.home1.oss.lib.webmvc.internal.DefaultDomainResolver;
-import cn.home1.oss.lib.webmvc.internal.DefaultHttpEntityMethodProcessor;
-import cn.home1.oss.lib.webmvc.internal.DefaultRequestResolver;
 
 /**
  * Extends WebMvcConfigurerAdapter make this visable to MockMvc tests,
