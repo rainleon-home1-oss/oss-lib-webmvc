@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.yirendai.oss.lib.webmvc.starter.WebApplicationAutoConfiguration
+cn.home1.oss.lib.webmvc.starter.WebApplicationAutoConfiguration

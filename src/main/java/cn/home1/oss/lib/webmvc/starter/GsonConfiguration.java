@@ -1,4 +1,4 @@
-package com.yirendai.oss.lib.webmvc.starter;
+package cn.home1.oss.lib.webmvc.starter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
@@ -17,6 +17,6 @@ public class GsonConfiguration {
   @Bean
   @ConditionalOnBean(type = {"com.google.gson.GsonBuilder"})
   public com.google.gson.Gson gson(final com.google.gson.GsonBuilder builder) {
-    return com.yirendai.oss.lib.common.GsonUtils.setup(builder);
+    return cn.home1.oss.lib.common.GsonUtils.setup(builder);
   }
 }

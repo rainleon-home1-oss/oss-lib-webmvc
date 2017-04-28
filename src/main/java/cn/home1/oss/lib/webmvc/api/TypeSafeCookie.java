@@ -1,4 +1,4 @@
-package com.yirendai.oss.lib.webmvc.api;
+package cn.home1.oss.lib.webmvc.api;
 
 import static java.util.concurrent.TimeUnit.DAYS;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;

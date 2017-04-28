@@ -1,10 +1,10 @@
-package com.yirendai.oss.lib.webmvc.api;
+package cn.home1.oss.lib.webmvc.api;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import com.yirendai.oss.lib.common.crypto.Jwt;
-
 import lombok.Getter;
+
+import cn.home1.oss.lib.common.crypto.Jwt;
 
 /**
  * Created by zhanghaolun on 16/10/29.

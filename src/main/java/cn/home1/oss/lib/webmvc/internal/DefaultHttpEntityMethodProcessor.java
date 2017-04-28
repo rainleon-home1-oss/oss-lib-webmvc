@@ -1,4 +1,4 @@
-package com.yirendai.oss.lib.webmvc.internal;
+package cn.home1.oss.lib.webmvc.internal;
 
 import static org.springframework.web.HttpMessageConverterUtils.defaultContentNegotiationManager;
 import static org.springframework.web.HttpMessageConverterUtils.defaultHttpMessageConverters;

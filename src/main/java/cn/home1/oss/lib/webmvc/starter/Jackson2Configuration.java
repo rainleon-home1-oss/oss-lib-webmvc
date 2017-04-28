@@ -1,4 +1,4 @@
-package com.yirendai.oss.lib.webmvc.starter;
+package cn.home1.oss.lib.webmvc.starter;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -17,6 +17,6 @@ public class Jackson2Configuration {
 
   @Autowired(required = false)
   public void setObjectMapper(final com.fasterxml.jackson.databind.ObjectMapper objectMapper) {
-    com.yirendai.oss.lib.common.Jackson2Utils.setupObjectMapper(this.environment, objectMapper);
+    cn.home1.oss.lib.common.Jackson2Utils.setupObjectMapper(this.environment, objectMapper);
   }
 }

@@ -1,4 +1,4 @@
-package com.yirendai.oss.lib.webmvc.internal;
+package cn.home1.oss.lib.webmvc.internal;
 
 import static lombok.AccessLevel.PACKAGE;
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
@@ -8,8 +8,6 @@ import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.http.HttpMethod.PUT;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-import com.yirendai.oss.lib.webmvc.api.RequestResolver;
-
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -17,6 +15,8 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 
 import javax.servlet.http.HttpServletRequest;
+
+import cn.home1.oss.lib.webmvc.api.RequestResolver;
 
 /**
  * Created by zhanghaolun on 16/8/18.

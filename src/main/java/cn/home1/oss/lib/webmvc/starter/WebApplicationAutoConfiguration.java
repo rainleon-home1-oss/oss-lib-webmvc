@@ -1,13 +1,6 @@
-package com.yirendai.oss.lib.webmvc.starter;
+package cn.home1.oss.lib.webmvc.starter;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
-
-import com.yirendai.oss.boot.autoconfigure.AppProperties;
-import com.yirendai.oss.lib.webmvc.api.DomainResolver;
-import com.yirendai.oss.lib.webmvc.api.RequestResolver;
-import com.yirendai.oss.lib.webmvc.internal.DefaultDomainResolver;
-import com.yirendai.oss.lib.webmvc.internal.DefaultHttpEntityMethodProcessor;
-import com.yirendai.oss.lib.webmvc.internal.DefaultRequestResolver;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.AutoConfigureBefore;
@@ -28,6 +21,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 import javax.servlet.Servlet;
 
+import cn.home1.oss.boot.autoconfigure.AppProperties;
+import cn.home1.oss.lib.webmvc.api.DomainResolver;
+import cn.home1.oss.lib.webmvc.api.RequestResolver;
+import cn.home1.oss.lib.webmvc.internal.DefaultDomainResolver;
+import cn.home1.oss.lib.webmvc.internal.DefaultHttpEntityMethodProcessor;
+import cn.home1.oss.lib.webmvc.internal.DefaultRequestResolver;
+
 /**
  * Extends WebMvcConfigurerAdapter make this visable to MockMvc tests,
  * does not override it's method.
@@ -36,7 +36,7 @@ import javax.servlet.Servlet;
 @ConditionalOnWebApplication
 @AutoConfigureBefore({ErrorMvcAutoConfiguration.class, WebMvcAutoConfiguration.class})
 @Configuration
-@ComponentScan(basePackages = {"com.yirendai.oss.lib.webmvc.starter"})
+@ComponentScan(basePackages = {"cn.home1.oss.lib.webmvc.starter"})
 @EnableConfigurationProperties(value = {AppProperties.class})
 @Import({GsonConfiguration.class, Jackson2Configuration.class})
 public class WebApplicationAutoConfiguration extends WebMvcConfigurerAdapter {

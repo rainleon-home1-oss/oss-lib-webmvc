@@ -1,13 +1,13 @@
-package com.yirendai.oss.lib.webmvc.internal;
+package cn.home1.oss.lib.webmvc.internal;
 
 import static lombok.AccessLevel.PACKAGE;
-
-import com.yirendai.oss.lib.webmvc.api.DomainResolver;
 
 import lombok.Getter;
 import lombok.Setter;
 
 import javax.servlet.http.HttpServletRequest;
+
+import cn.home1.oss.lib.webmvc.api.DomainResolver;
 
 /**
  * Created by zhanghaolun on 16/8/18.

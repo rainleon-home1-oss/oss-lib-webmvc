@@ -117,7 +117,7 @@ public final class HttpMessageConverterUtils {
     if (isJackson2Present(classLoader)) {
       if (objectMapper == null) {
         converters.add(new MappingJackson2HttpMessageConverter( //
-            com.yirendai.oss.lib.common.Jackson2Utils.setupObjectMapper( //
+            cn.home1.oss.lib.common.Jackson2Utils.setupObjectMapper( //
               propertyResolver, //
               Jackson2ObjectMapperBuilder.json().build()) //
           ) //

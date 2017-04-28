@@ -1,9 +1,9 @@
-package com.yirendai.oss.lib.webmvc.api;
+package cn.home1.oss.lib.webmvc.api;
 
 import static com.google.common.base.Charsets.UTF_8;
 
-import com.yirendai.oss.lib.common.CodecUtils;
-import com.yirendai.oss.lib.common.crypto.EncodeCipher;
+import cn.home1.oss.lib.common.CodecUtils;
+import cn.home1.oss.lib.common.crypto.EncodeCipher;
 
 /**
  * Created by zhanghaolun on 16/10/30.
