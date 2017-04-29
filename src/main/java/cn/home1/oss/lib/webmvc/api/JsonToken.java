@@ -1,9 +1,10 @@
-package com.yirendai.oss.lib.webmvc.api;
+package cn.home1.oss.lib.webmvc.api;
 
 import static org.apache.commons.lang3.StringUtils.isNotBlank;
 
+import cn.home1.oss.lib.common.Jackson2Utils;
+
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.yirendai.oss.lib.common.Jackson2Utils;
 
 import lombok.extern.slf4j.Slf4j;
 

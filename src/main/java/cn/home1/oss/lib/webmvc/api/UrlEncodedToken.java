@@ -1,8 +1,8 @@
-package com.yirendai.oss.lib.webmvc.api;
+package cn.home1.oss.lib.webmvc.api;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import com.yirendai.oss.lib.common.CodecUtils;
+import cn.home1.oss.lib.common.CodecUtils;
 
 /**
  * Created by zhanghaolun on 16/11/14.

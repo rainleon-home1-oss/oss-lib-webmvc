@@ -1,4 +1,4 @@
-package com.yirendai.oss.lib.webmvc.api;
+package cn.home1.oss.lib.webmvc.api;
 
 /**
  * Created by zhanghaolun on 16/10/30.
