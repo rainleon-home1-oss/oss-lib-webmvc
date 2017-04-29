@@ -2,9 +2,9 @@ package cn.home1.oss.lib.webmvc.api;
 
 import static com.google.common.base.Preconditions.checkNotNull;
 
-import lombok.Getter;
-
 import cn.home1.oss.lib.common.crypto.Jwt;
+
+import lombok.Getter;
 
 /**
  * Created by zhanghaolun on 16/10/29.

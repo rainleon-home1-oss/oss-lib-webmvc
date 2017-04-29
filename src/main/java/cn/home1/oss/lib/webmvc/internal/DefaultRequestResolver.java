@@ -8,6 +8,8 @@ import static org.springframework.http.HttpMethod.POST;
 import static org.springframework.http.HttpMethod.PUT;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
+import cn.home1.oss.lib.webmvc.api.RequestResolver;
+
 import lombok.Getter;
 import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
@@ -15,8 +17,6 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpMethod;
 
 import javax.servlet.http.HttpServletRequest;
-
-import cn.home1.oss.lib.webmvc.api.RequestResolver;
 
 /**
  * Created by zhanghaolun on 16/8/18.
@@ -40,7 +40,7 @@ public class DefaultRequestResolver implements RequestResolver {
 
     if (log.isTraceEnabled()) {
       log.trace("contextPath: {}, requestUri: {}, isLoginRequest: {}", //
-          request.getContextPath(), request.getRequestURI(), isLoginRequest);
+        request.getContextPath(), request.getRequestURI(), isLoginRequest);
     }
     return isLoginRequest;
   }
@@ -57,8 +57,8 @@ public class DefaultRequestResolver implements RequestResolver {
     final String accept = isNotBlank(acceptHeader) ? acceptHeader : "";
     final String underscore = request.getParameter("_");
     final boolean result = POST == httpMethod || PUT == httpMethod || DELETE == httpMethod //
-        || accept.contains(APPLICATION_JSON_VALUE) //
-        || isNotBlank(underscore);
+      || accept.contains(APPLICATION_JSON_VALUE) //
+      || isNotBlank(underscore);
     return result;
   }
 }
